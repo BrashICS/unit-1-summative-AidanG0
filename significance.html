@@ -104,6 +104,16 @@ a:active {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+div.sticky {
+  position: sticky;
+  bottom: 20;
+}
+.bottomright {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 18px;
+}
       </style>
   </head>
 
@@ -136,9 +146,12 @@ a:active {
 </h4>
 </br>
 
+<div class="bottomright">
+  <div class="sticky">
 <button onClick="window.location.href='sources.html'"
 class="button button1"class="button" style="vertical-align:middle"><span>Next </span></button>
-
+</div>
+</div>
   </body>
 
 </html>
