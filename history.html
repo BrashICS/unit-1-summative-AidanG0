@@ -49,6 +49,9 @@ a:active {
   color: #291db0;
 }
 
+div.sticky {
+  position: sticky;
+  top: 0;
 .button {
   display: inline-block;
   padding: 15px 25px;
@@ -57,12 +60,13 @@ a:active {
   text-align: center;
   text-decoration: none;
   outline: none;
-  color: #fff;
-  background-color: #04AA6D;
-  border: none;
+  color: #000000;
+  background-color: #ffffff;
+  border: 2px solid #555555;
   border-radius: 15px;
   box-shadow: 0 9px #999;
 }
+
 
 .button1 {
   background-color: white; 
@@ -104,16 +108,7 @@ a:active {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
-div.sticky {
-  position: sticky;
-  bottom: 20;
-}
-.bottomright {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  font-size: 18px;
-}
+
       </style>
   </head>
 
@@ -146,12 +141,13 @@ div.sticky {
 </h4>
 </br>
 
-<div class="bottomright">
+
   <div class="sticky">
 <button onClick="window.location.href='significance.html'"
 class="button button1"class="button" style="vertical-align:middle"><span>Next </span></button>
+  </div>
+
   </body>
-</div>
-</div>
+
 
 </html>
