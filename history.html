@@ -50,17 +50,18 @@ a:active {
 }
 
 .button {
-  background-color: #04AA6D; /* Green */
-  border: none;
-  color: white;
-  padding: 16px 32px;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
 }
 
 .button1 {
@@ -72,6 +73,36 @@ a:active {
 .button1:hover {
   background-color: #555555;
   color: white;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.button:active {
+  background-color: #555555;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
       </style>
   </head>
@@ -105,8 +136,8 @@ a:active {
 </h4>
 </br>
 
-<button onClick="window.location.href='history.html'"
-class="button button1">Next</button>
+<button onClick="window.location.href='significance.html'"
+class="button button1"class="button" style="vertical-align:middle"><span>Next </span></button>
   </body>
 
 </html>
